@@ -160,13 +160,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // ---- Lazy image fade-in ----
-    document.querySelectorAll('img[loading="lazy"]').forEach(img => {
-        if (img.complete) {
-            img.classList.add('loaded');
-        } else {
-            img.addEventListener('load', () => img.classList.add('loaded'));
-        }
-    });
-
 });

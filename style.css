@@ -944,16 +944,8 @@ img {
 }
 
 /* --- IMAGE PERFORMANCE --- */
+/* hint to browser it can skip off-screen image rendering */
 .project-thumb img,
 .about-photo-wrapper img {
   content-visibility: auto;
-}
-
-img[loading="lazy"] {
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-img[loading="lazy"].loaded {
-  opacity: 1;
 }
