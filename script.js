@@ -1,4 +1,4 @@
-/* ===================================================
+﻿/* ===================================================
    Neo-Brutalist Portfolio — script.js
    Scroll reveal, active nav, smooth interactions
    =================================================== */
@@ -134,6 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
     // ---- Parallax tilt on hero card (subtle) ----
     const heroCard = document.querySelector('.hero-card');
     if (heroCard && window.matchMedia('(min-width: 800px)').matches) {
@@ -159,17 +160,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-});
 
-// ---- Wiggle Keyframes (injected via JS) ----
-const style = document.createElement('style');
-style.textContent = `
-  @keyframes wiggle {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(5deg); }
-    50% { transform: rotate(-5deg); }
-    75% { transform: rotate(3deg); }
-    100% { transform: rotate(0deg); }
-  }
-`;
-document.head.appendChild(style);
+});

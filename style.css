@@ -1,4 +1,4 @@
-/* ===================================================
+﻿/* ===================================================
    Neo-Brutalist Paper Folio — Design System
    =================================================== */
 
@@ -865,50 +865,6 @@ img {
   100% {
     transform: translateX(-50%);
   }
-}
-
-.repo-chip {
-  flex-shrink: 0;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  font-weight: 700;
-  padding: 10px 20px;
-  background: var(--white);
-  border: var(--border-w) solid var(--black);
-  border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition);
-  white-space: nowrap;
-  text-decoration: none;
-}
-
-.repo-chip:hover {
-  background: var(--accent-blue);
-  color: var(--white);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-}
-
-/* --- DOODLE DECORATIONS --- */
-.doodle {
-  position: absolute;
-  pointer-events: none;
-  opacity: 0.15;
-}
-
-/* --- ANIMATIONS --- */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* --- RESPONSIVE --- */
