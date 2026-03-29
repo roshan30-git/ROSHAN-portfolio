@@ -949,3 +949,84 @@ img {
 .about-photo-wrapper img {
   content-visibility: auto;
 }
+
+/* ============================================
+   SCROLL REVEAL ANIMATION SYSTEM
+   ============================================ */
+
+/* Base hidden state — all .reveal start invisible and below */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+/* Triggered by JS IntersectionObserver */
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered entrance for grid children */
+.reveal.visible:nth-child(1) { transition-delay: 0ms; }
+.reveal.visible:nth-child(2) { transition-delay: 80ms; }
+.reveal.visible:nth-child(3) { transition-delay: 160ms; }
+.reveal.visible:nth-child(4) { transition-delay: 240ms; }
+.reveal.visible:nth-child(5) { transition-delay: 320ms; }
+.reveal.visible:nth-child(6) { transition-delay: 400ms; }
+.reveal.visible:nth-child(7) { transition-delay: 480ms; }
+.reveal.visible:nth-child(8) { transition-delay: 560ms; }
+
+/* Hero card — scale + fade entrance */
+.hero-card.reveal {
+  transform: translateY(28px) scale(0.98);
+}
+.hero-card.reveal.visible {
+  transform: translateY(0) scale(1);
+}
+
+/* Skill cards — slide in from left */
+.skill-card.reveal {
+  transform: translateX(-20px);
+}
+.skill-card.reveal.visible {
+  transform: translateX(0);
+}
+
+/* Badge cards — pop with spring */
+.badge-card.reveal {
+  transform: translateY(20px) scale(0.94);
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.badge-card.reveal.visible {
+  transform: translateY(0) scale(1);
+}
+
+/* Section labels — slide in from left */
+.section-label {
+  opacity: 0;
+  transform: translateX(-18px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.section-label.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* AI Studio pulse animation */
+@keyframes pulse {
+  0%   { transform: scale(1);   opacity: 1; }
+  50%  { transform: scale(1.4); opacity: 0.6; }
+  100% { transform: scale(1);   opacity: 1; }
+}
+
+/* Image rendering hint */
+.project-thumb img,
+.about-photo-wrapper img {
+  content-visibility: auto;
+}

@@ -6,7 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // ---- Scroll Reveal (IntersectionObserver) ----
-    const revealElements = document.querySelectorAll('.reveal');
+    const revealElements = document.querySelectorAll('.reveal, .section-label');
 
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry, index) => {
