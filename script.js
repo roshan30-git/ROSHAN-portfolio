@@ -1,4 +1,4 @@
-﻿/* ===================================================
+/* ===================================================
    Neo-Brutalist Portfolio — script.js
    Scroll reveal, active nav, smooth interactions
    =================================================== */
@@ -53,10 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---- Navbar hide/show on scroll ----
     let lastScrollY = 0;
     const navbar = document.getElementById('navbar');
+    navbar.style.transition = 'transform 0.35s ease, opacity 0.35s ease';
 
     window.addEventListener('scroll', () => {
         const currentScrollY = window.scrollY;
 
+        // Hide/show navbar
         if (currentScrollY > lastScrollY && currentScrollY > 300) {
             navbar.style.transform = 'translateX(-50%) translateY(-120%)';
             navbar.style.opacity = '0';
@@ -67,9 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         lastScrollY = currentScrollY;
     }, { passive: true });
-
-    // Add transition to navbar for smooth hide/show
-    navbar.style.transition = 'transform 0.35s ease, opacity 0.35s ease';
 
     // ---- Sticker wiggle on hover ----
     document.querySelectorAll('.sticker').forEach(sticker => {
@@ -160,5 +159,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
+    // ---- Lazy image fade-in ----
+    document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+        if (img.complete) {
+            img.classList.add('loaded');
+        } else {
+            img.addEventListener('load', () => img.classList.add('loaded'));
+        }
+    });
 
 });
