@@ -4,9 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Roshan Kanojiya — AI Orchestration & n8n Workflows</title>
+  <title>ROSHAN | Portfolio - AI Automation & System Architecture</title>
   <meta name="description"
-    content="AI orchestration engineer building production n8n workflows, document Q&A assistants, and LLM agents. Portfolio includes 20+ automation projects." />
+    content="Production-grade AI automation, system architecture, and n8n orchestration. 10x developer specializing in high-performance digital infrastructure.">
+
+  <!-- Mermaid.js for Workflow Architecture Diagrams -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
+  <!-- Preconnect to Google Fonts for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -19,7 +24,7 @@
     "@type": "Person",
     "name": "Roshan Kanojiya",
     "url": "https://github.com/roshan30-git/ROSHAN-portfolio",
-    "jobTitle": "AI Orchestration & Automation Engineer",
+    "jobTitle": "AI Product Architect & Creative Technologist",
     "sameAs": [
       "https://github.com/roshan30-git",
       "https://www.linkedin.com/in/roshankanojiya/",
@@ -35,8 +40,11 @@
   <nav class="navbar" id="navbar">
     <a href="#hero">Home</a>
     <a href="#about">About</a>
+    <a href="#flagship">Flagship</a>
+    <a href="#live-apps">Mini Apps</a>
+    <a href="#video-portfolio">Videos</a>
+    <a href="#projects">Workflows</a>
     <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
     <a href="#badges">Badges</a>
     <a href="#contact" class="nav-cta">Contact</a>
   </nav>
@@ -49,63 +57,48 @@
         <div class="hero-stickers">
           <span class="sticker sticker--blue">📍 Surat, India</span>
           <span class="sticker sticker--pink">🎓 B.E. Computer Engineering — SSASIT, Surat</span>
-          <span class="sticker sticker--yellow">⚡ System Designer</span>
-          <span class="sticker sticker--green">🤝 Open to Internships · Startups · Collaboration</span>
+          <span class="sticker sticker--yellow">⚡ AI Product Architect</span>
+          <span class="sticker sticker--green">🤝 Open to freelance, internships, open-source work, and serious product ideas</span>
           <span class="sticker sticker--orange">Always Learning ;)</span>
         </div>
 
-        <p class="hero-greeting">Hey there, I'm</p>
+        <p class="hero-greeting">Hey, I'm</p>
         <h1 class="hero-name">
-          <span class="highlight">Roshan</span> Kanojiya
+          <span class="highlight">Roshan</span>
         </h1>
-        <p class="hero-title">System Designer — AI-Powered Distributed Systems & Orchestration</p>
-        <p class="hero-desc">
-          I design and implement <strong>production-ready systems</strong> that orchestrate APIs, LLMs, data pipelines,
-          and workflows with <strong>deterministic behavior, cost control, and failure handling</strong>. My focus is
-          system architecture, not just automation.
+        <p class="hero-title">AI Product Architect & Creative Technologist</p>
+        <p class="hero-desc" style="font-size: 1.15rem; font-weight: 600; margin-bottom: 12px; color: var(--text);">
+          I build AI products, automation systems, creative AI experiences, and marketing infrastructure.
+        </p>
+        <p class="hero-desc" style="margin-bottom: 12px;">
+          From visual learning platforms and AI-powered apps to content engines, orchestration workflows, and business automation systems, I enjoy turning ideas into products people can actually use.
+        </p>
+        <p class="hero-desc" style="margin-bottom: 12px;">
+          Currently building <strong>Diagrammatics</strong>, an AI-native visual learning platform, while experimenting with AI agents, cognitive interfaces, creative tooling, and automation systems that reduce friction for both businesses and individuals.
         </p>
         <p class="hero-desc" style="font-size: 0.95rem; margin-top: 16px; margin-bottom: 24px;">
-          <em>Computer Engineering student at SSASIT, Surat · Open to internships, startups, and collaboration.</em>
+          <em>Computer Engineering student at SSASIT, Surat · Freelancer · Builder · Constantly exploring new tools, systems, and ideas.</em>
         </p>
 
-        <!-- Quick Stats -->
-        <div class="hero-stats">
-          <span class="stat-chip">54-Node Production Workflow (Meta Ads)</span>
-          <span class="stat-chip">End-to-End Ownership: Design → Deploy → Operate</span>
-          <span class="stat-chip">20+ Production Systems Built</span>
-          <span class="stat-chip">18+ Google Cloud Skill Badges</span>
+        <!-- Visual Capability Row -->
+        <div class="hero-capabilities">
+          <span class="hero-cap-chip">🧠 AI Products & Apps</span>
+          <span class="hero-cap-chip">⚙️ Automation Systems</span>
+          <span class="hero-cap-chip">🎨 Creative AI Systems</span>
+          <span class="hero-cap-chip">📈 Marketing Infrastructure</span>
         </div>
 
         <!-- CTAs -->
-        <div class="hero-ctas">
+        <div class="hero-ctas" style="margin-top: 24px;">
           <a href="mailto:roshankanojiya13@gmail.com" class="btn btn-primary">
             ✉️ Collaborate / Consult
           </a>
           <a href="#projects" class="btn btn-secondary">
-            🚀 View Projects
+            🚀 View Systems & Projects
           </a>
           <a href="Roshan_Kanojiya_System_Design_Final.pdf" class="btn btn-secondary" download>
             📄 Resume
           </a>
-        </div>
-      </div>
-
-      <!-- Value Props -->
-      <div class="value-props">
-        <div class="value-card reveal">
-          <div class="icon">⚙️</div>
-          <h3>Reliable Orchestration</h3>
-          <p>Production-grade workflows with retries, dead-letter handling, and logging.</p>
-        </div>
-        <div class="value-card reveal">
-          <div class="icon">💰</div>
-          <h3>Cost-Aware AI</h3>
-          <p>LLM batching, caching, and model selection to minimize API spend.</p>
-        </div>
-        <div class="value-card reveal">
-          <div class="icon">📦</div>
-          <h3>End-to-End Delivery</h3>
-          <p>Prototype → Workflow → Handoff — n8n flows, runbooks, README & demo GIFs.</p>
         </div>
       </div>
     </div>
@@ -120,229 +113,497 @@
           <div class="photo-placeholder"><img src="photo_2026-02-14_15-41-59.webp" alt=""></div>
         </div>
         <div class="about-content">
-          <h2>Designing Production-Grade AI Orchestration Systems</h2>
-          <p>
-            I’m a computer engineering student who likes building random things that turn into real systems. Most of
-            what I build comes from problems I face as a student and see other students struggle with. I enjoy
-            connecting AI models, APIs, and workflows to solve practical problems, and I’m always experimenting with new
-            ideas. I love collaborating, learning from others, and working on projects that actually get used.
+          <h2>Why I Build Things</h2>
+          <p style="margin-bottom: 12px;">
+            Most of my projects start with a simple question:
           </p>
-          <div class="about-details">
-            <div class="detail-row">
-              <span class="label">ROLE</span>
-              <span class="value">System Designer — AI Orchestration & Distributed Systems</span>
-            </div>
-            <div class="detail-row">
-              <span class="label">EDUCATION</span>
-              <span class="value">B.E. Computer Engineering, SSASIT — Surat</span>
-            </div>
-            <div class="detail-row">
-              <span class="label">FOCUS</span>
-              <span class="value">System Architecture, AI Orchestration, Distributed Workflows</span>
-            </div>
-            <div class="detail-row">
-              <span class="label">EMAIL</span>
-              <span class="value"><a href="mailto:roshankanojiya13@gmail.com">roshankanojiya13@gmail.com</a></span>
-            </div>
-          </div>
+          <blockquote style="border-left: 3px solid var(--accent-orange); padding-left: 12px; margin-bottom: 16px; font-style: italic; color: var(--text-muted);">
+            "Why is this harder than it should be?"
+          </blockquote>
+          <p style="margin-bottom: 12px;">
+            Sometimes it's a confusing engineering topic. Sometimes it's a repetitive workflow. Sometimes it's my own inability to stay focused.
+          </p>
+          <p style="margin-bottom: 12px;">
+            That curiosity has led me to build everything from AI orchestration systems and educational tools to productivity experiments and creative AI applications. I'm currently studying Computer Engineering at SSASIT, Surat, while freelancing, exploring new technologies, and building products that solve problems I personally experience.
+          </p>
+          <p style="margin-bottom: 12px; font-weight: 600; color: var(--text);">
+            My biggest interest isn't automation itself. It's understanding how people think, learn, get distracted, and interact with technology.
+          </p>
+          <p>
+            That's why many of my projects combine AI, psychology, visual learning, and system design rather than focusing on software alone.
+          </p>
         </div>
       </div>
+
+      <!-- Bento Facts Card (Outside the About card for full-width layout) -->
+      <div class="about-bento-grid reveal" style="margin-top: 32px;">
+        <div class="bento-fact-card">
+          <span class="fact-label">♟ Hobby</span>
+          <span class="fact-value">Playing Chess (1500 ELO)</span>
+        </div>
+        <div class="bento-fact-card">
+          <span class="fact-label">🧠 Interested In</span>
+          <span class="fact-value">Psychology, Cognition, Learning Systems</span>
+        </div>
+        <div class="bento-fact-card">
+          <span class="fact-label">🚀 Currently Building</span>
+          <span class="fact-value">Diagrammatics</span>
+        </div>
+        <div class="bento-fact-card">
+          <span class="fact-label">🎯 Current Goal</span>
+          <span class="fact-value">Finish engineering while shipping real products</span>
+        </div>
+        <div class="bento-fact-card">
+          <span class="fact-label">🔬 Exploring</span>
+          <span class="fact-value">AI Agents, RAG, Cognitive Interfaces</span>
+        </div>
+        <div class="bento-fact-card">
+          <span class="fact-label">📍 Based In</span>
+          <span class="fact-value">Surat, Gujarat</span>
+        </div>
+      </div>
+
+      <!-- Technical Skills Section -->
+      <div class="technical-skills reveal" style="margin-top: 40px;">
+        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 24px; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: -0.02em;">Technical Skills</h3>
+        <div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+          
+          <!-- Skill Card 1 -->
+          <div class="skill-card" style="background: var(--bg-alt); padding: 24px; border: 3px solid var(--black); box-shadow: 6px 6px 0px rgba(0,0,0,1);">
+            <h4 style="margin-top:0; border-bottom: 2px solid var(--black); padding-bottom: 12px; margin-bottom: 16px; font-size: 1.1rem;">🧠 AI Systems & Product Engineering</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span class="tag">AI Agents & Workflows</span><span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">Multi-Agent Systems</span><span class="tag">AI Product Architecture</span><span class="tag">Prompt Engineering</span><span class="tag">AI-Native UX</span><span class="tag">Visual Learning</span>
+            </div>
+          </div>
+          
+          <!-- Skill Card 2 -->
+          <div class="skill-card" style="background: var(--bg-alt); padding: 24px; border: 3px solid var(--black); box-shadow: 6px 6px 0px rgba(0,0,0,1);">
+            <h4 style="margin-top:0; border-bottom: 2px solid var(--black); padding-bottom: 12px; margin-bottom: 16px; font-size: 1.1rem;">⚙️ Workflow Orchestration</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span class="tag">n8n</span><span class="tag">API Integrations</span><span class="tag">Event-Driven Workflows</span><span class="tag">Webhooks</span><span class="tag">Data Pipelines</span><span class="tag">Automation Design</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 3 -->
+          <div class="skill-card" style="background: var(--bg-alt); padding: 24px; border: 3px solid var(--black); box-shadow: 6px 6px 0px rgba(0,0,0,1);">
+            <h4 style="margin-top:0; border-bottom: 2px solid var(--black); padding-bottom: 12px; margin-bottom: 16px; font-size: 1.1rem;">💻 Development</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">SQL</span><span class="tag">HTML5/CSS3</span><span class="tag">FastAPI</span><span class="tag">Node.js</span><span class="tag">React</span><span class="tag">Next.js</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 4 -->
+          <div class="skill-card" style="background: var(--bg-alt); padding: 24px; border: 3px solid var(--black); box-shadow: 6px 6px 0px rgba(0,0,0,1);">
+            <h4 style="margin-top:0; border-bottom: 2px solid var(--black); padding-bottom: 12px; margin-bottom: 16px; font-size: 1.1rem;">☁️ Infrastructure & Data</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span class="tag">Gemini API</span><span class="tag">OpenAI</span><span class="tag">AgentScope</span><span class="tag">Vector DBs</span><span class="tag">Supabase</span><span class="tag">GCP</span><span class="tag">Docker</span><span class="tag">Vercel</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 5 -->
+          <div class="skill-card" style="background: var(--bg-alt); padding: 24px; border: 3px solid var(--black); box-shadow: 6px 6px 0px rgba(0,0,0,1);">
+            <h4 style="margin-top:0; border-bottom: 2px solid var(--black); padding-bottom: 12px; margin-bottom: 16px; font-size: 1.1rem;">🎨 Product & Design</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span class="tag">System Design</span><span class="tag">Product Architecture</span><span class="tag">Human-Centered AI</span><span class="tag">UX Psychology</span><span class="tag">Visual Info Design</span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- ============ SKILLS & TECHNOLOGIES ============ -->
-  <section class="section" id="skills">
+  <!-- ============ THE SCHEMATE SYSTEM ============ -->
+  <section class="section" id="flagship">
     <div class="container">
-      <span class="section-label"><span class="dot" style="background: var(--accent-purple)"></span> Skills &
-        Technologies</span>
+      <span class="section-label"><span class="dot" style="background: var(--accent-blue)"></span> The Schemata System</span>
+      
+      <div class="flagship-wrapper">
+        <div class="flagship-card reveal">
+          <div class="flagship-text">
+            <span class="section-label" style="font-size: 0.7rem; margin-bottom: 8px; color: var(--accent-orange); display: block;">Main Flagship Project</span>
+            <h3>The Schemata System</h3>
+            <p>
+              An AI-native visual learning platform designed to transform dense PDFs, STEM content, and technical concepts into diagrams, visual explanations, comparison grids, formula cards, and adaptive learning experiences. Focused on reducing cognitive load through visual-first understanding rather than information overload.
+            </p>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; margin-top: 16px;">
+              <span class="tag">Visual Learning</span>
+              <span class="tag">Local RAG</span>
+              <span class="tag">AgentScope</span>
+              <span class="tag">Memory</span>
+              <span class="tag">Multimodal AI</span>
+              <span class="tag">Mermaid</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Next.js</span>
+            </div>
 
-      <!-- Category Tabs -->
-      <div class="skills-tabs">
-        <button class="skill-tab active" data-category="all">All</button>
-        <button class="skill-tab" data-category="automation">Systems & Automation</button>
-        <button class="skill-tab" data-category="frontend">Frontend</button>
-        <button class="skill-tab" data-category="ai">AI/ML</button>
-        <button class="skill-tab" data-category="tools">Tools</button>
+            <a href="https://github.com/Schemata-System/diagrammatics-core" target="_blank" class="flagship-cta">
+              View Live System &rarr;
+            </a>
+          </div>
+          
+          <div class="flagship-preview">
+            <div class="flagship-code-box">
+              <span style="color:#666;">// Ingesting STEM Document...</span><br>
+              <span style="color:var(--accent-pink);">const</span> RAG = <span style="color:var(--white);">new</span> LocalRAGCore();<br>
+              <span style="color:var(--accent-blue);">await</span> RAG.ingestDocument(pdfFile);<br>
+              <span style="color:var(--white);">const</span> graph = RAG.toMermaidFlow();<br>
+              <span style="color:#666;">// Outputting interactive canvas graph</span>
+            </div>
+            
+            <!-- Floating wiggling badge stickers -->
+            <span class="float-badge badge-a sticker">Cognitive Visual UI</span>
+            <span class="float-badge badge-b sticker">Local RAG Core</span>
+            <span class="float-badge badge-c sticker">AgentScope Architecture</span>
+          </div>
+        </div>
       </div>
 
-      <!-- Skills Grid -->
-      <div class="skills-grid">
-
-        <!-- Systems & Automation Skills -->
-        <div class="skill-card reveal" data-category="automation">
-          <div class="skill-header">
-            <span class="skill-icon">⚡</span>
-            <span class="skill-name">Orchestration Workflows</span>
-            <span class="skill-percent">95%</span>
+      <!-- Future Research Systems / Future Tools I'll Build -->
+      <div class="future-research-systems" style="margin-top: 56px;">
+        <span class="section-label"><span class="dot" style="background: var(--accent-pink)"></span> Future Tools I'll Build</span>
+        <div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 16px;">
+          
+          <!-- ADHD Project 01 -->
+          <div class="skill-card reveal" style="background: var(--white); padding: 28px; border: var(--border-w) solid var(--black); box-shadow: var(--shadow-md); border-radius: var(--radius-md);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; border-bottom: 2px solid var(--black); padding-bottom: 12px;">
+              <h4 style="margin: 0; font-size: 1.2rem; font-weight: 800;">ADHD Project 01: Attention Redirect</h4>
+              <span class="status-badge" style="box-shadow: none; font-size: 0.65rem; padding: 4px 10px;">Research & Ideation</span>
+            </div>
+            <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 0;">
+              A behavior-interruption system designed to detect distraction patterns, calm cognitive overload, and redirect users back to meaningful work through tiny actions and low-friction interventions.
+            </p>
           </div>
-          <div class="skill-bar">
-            <div class="skill-fill" style="--skill-width: 95%"></div>
+
+          <!-- ADHD Project 02 -->
+          <div class="skill-card reveal" style="background: var(--white); padding: 28px; border: var(--border-w) solid var(--black); box-shadow: var(--shadow-md); border-radius: var(--radius-md);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; border-bottom: 2px solid var(--black); padding-bottom: 12px;">
+              <h4 style="margin: 0; font-size: 1.2rem; font-weight: 800;">ADHD Project 02: Executive Assistant for ADHD Minds</h4>
+              <span class="status-badge" style="box-shadow: none; font-size: 0.65rem; padding: 4px 10px;">Research & Ideation</span>
+            </div>
+            <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 0;">
+              An autonomous AI companion designed to organize information from platforms such as WhatsApp and Google Classroom, reducing mental clutter and helping users stay focused on what matters.
+            </p>
           </div>
         </div>
-
-        <div class="skill-card reveal" data-category="automation">
-          <div class="skill-header">
-            <span class="skill-icon">🎓</span>
-            <span class="skill-name">System Architecture (EdTech)</span>
-            <span class="skill-percent">95%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" style="--skill-width: 95%"></div>
-          </div>
-        </div>
-
-        <div class="skill-card reveal" data-category="automation">
-          <div class="skill-header">
-            <span class="skill-icon">🔄</span>
-            <span class="skill-name">Distributed Workflow Design</span>
-            <span class="skill-percent">90%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" style="--skill-width: 90%"></div>
-          </div>
-        </div>
-
-        <div class="skill-card reveal" data-category="automation">
-          <div class="skill-header">
-            <span class="skill-icon">🔌</span>
-            <span class="skill-name">API Design & Integration</span>
-            <span class="skill-percent">90%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" style="--skill-width: 90%"></div>
-          </div>
-        </div>
-
-        <div class="skill-card reveal" data-category="automation">
-          <div class="skill-header">
-            <span class="skill-icon">💡</span>
-            <span class="skill-name">Problem-Driven System Design</span>
-            <span class="skill-percent">90%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" style="--skill-width: 90%"></div>
-          </div>
-        </div>
-
-        <!-- Frontend Skills -->
-        <div class="skill-card reveal" data-category="frontend">
-          <div class="skill-header">
-            <span class="skill-icon">📘</span>
-            <span class="skill-name">TypeScript</span>
-            <span class="skill-percent">80%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" style="--skill-width: 80%"></div>
-          </div>
-        </div>
-
-
-
-        <div class="skill-card reveal" data-category="frontend">
-          <div class="skill-header">
-            <span class="skill-icon">🎨</span>
-            <span class="skill-name">HTML/CSS</span>
-            <span class="skill-percent">85%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" style="--skill-width: 85%"></div>
-          </div>
-        </div>
-
-        <div class="skill-card reveal" data-category="frontend">
-          <div class="skill-header">
-            <span class="skill-icon">🐍</span>
-            <span class="skill-name">Python</span>
-            <span class="skill-percent">80%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" style="--skill-width: 80%"></div>
-          </div>
-        </div>
-
-        <!-- AI/ML Skills -->
-        <div class="skill-card reveal" data-category="ai">
-          <div class="skill-header">
-            <span class="skill-icon">🤖</span>
-            <span class="skill-name">LLM Integration</span>
-            <span class="skill-percent">85%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" style="--skill-width: 85%"></div>
-          </div>
-        </div>
-
-        <div class="skill-card reveal" data-category="ai">
-          <div class="skill-header">
-            <span class="skill-icon">🔍</span>
-            <span class="skill-name">RAG Systems</span>
-            <span class="skill-percent">80%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" style="--skill-width: 80%"></div>
-          </div>
-        </div>
-
-        <div class="skill-card reveal" data-category="ai">
-          <div class="skill-header">
-            <span class="skill-icon">✨</span>
-            <span class="skill-name">Gemini AI</span>
-            <span class="skill-percent">85%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" style="--skill-width: 85%"></div>
-          </div>
-        </div>
-
-        <!-- Tools -->
-        <div class="skill-card reveal" data-category="tools">
-          <div class="skill-header">
-            <span class="skill-icon">💻</span>
-            <span class="skill-name">Git/GitHub</span>
-            <span class="skill-percent">95%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" style="--skill-width: 95%"></div>
-          </div>
-        </div>
-
-        <div class="skill-card reveal" data-category="tools">
-          <div class="skill-header">
-            <span class="skill-icon">☁️</span>
-            <span class="skill-name">Google Cloud</span>
-            <span class="skill-percent">80%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" style="--skill-width: 80%"></div>
-          </div>
-        </div>
-
-        <div class="skill-card reveal" data-category="tools">
-          <div class="skill-header">
-            <span class="skill-icon">▲</span>
-            <span class="skill-name">Vercel</span>
-            <span class="skill-percent">85%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" style="--skill-width: 85%"></div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ============ FEATURED PROJECTS ============ -->
+  <!-- ============ AI STUDIO LIVE DEPLOYED APPS ============ -->
+  <section class="section" id="live-apps" style="background: var(--bg-alt); border-top: var(--border-w) solid var(--black); border-bottom: var(--border-w) solid var(--black);">
+    <div class="container">
+      <span class="section-label"><span class="dot" style="background: var(--accent-yellow)"></span> Live Deployed Mini Apps</span>
+      
+      <div class="projects-grid slidable-grid">
+        <!-- 1. SpeechRhythm -->
+        <div class="project-card reveal live-app-card">
+          <div class="live-app-pills">
+            <span class="live-pill primary">Social Speaking &rarr;</span>
+            <span class="live-pill">Gemini + React</span>
+          </div>
+          <div class="live-app-thumb">
+            <img src="image/ignore/thumbnail/Speaking_coach_bento_box_202606042235.jpeg" loading="lazy" decoding="async" alt="SpeechRhythm">
+          </div>
+          <div class="live-app-info">
+            <h3>SpeechRhythm</h3>
+            <p class="live-app-desc">"Duolingo for spontaneous speaking." An intensive speaking challenge engine featuring 1-minute prompts with camera + mic recording and Gemini scorecard (energy, clarity, hook, improvement points).</p>
+            <div class="live-app-tags">
+              <span class="tag">Gemini API</span>
+              <span class="tag">Tailwind</span>
+              <span class="tag">Framer Motion</span>
+            </div>
+            <div class="live-app-cta-row">
+              <a href="https://ai.studio/apps/3fd6f644-e861-4f44-9d54-cd3a25d763ab?fullscreenApplet=true" target="_blank" class="live-try-btn">Try it now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. ADHDAssist -->
+        <div class="project-card reveal live-app-card">
+          <div class="live-app-pills">
+            <span class="live-pill primary">Neuro-Focus &rarr;</span>
+            <span class="live-pill">Kotlin</span>
+          </div>
+          <div class="live-app-thumb">
+            <img src="image/ignore/thumbnail/Thought_Vault_app_interface_202606042234.jpeg" loading="lazy" decoding="async" alt="ADHDAssist">
+          </div>
+          <div class="live-app-info">
+            <h3>ADHDAssist</h3>
+            <p class="live-app-desc">Mindful productivity companion for neurodivergent minds. Features distraction interception, thought vault, breathing anchor, and customizable low-stimulation co-regulation modes. Calm sketchbook style UI.</p>
+            <div class="live-app-tags">
+              <span class="tag">Compose</span>
+              <span class="tag">Room DB</span>
+              <span class="tag">Gemini</span>
+            </div>
+            <div class="live-app-cta-row">
+              <a href="https://ai.studio/apps/c7611464-6ab4-4761-953d-10a1d2497e05" target="_blank" class="live-try-btn">Try it now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. GTU Copilot -->
+        <div class="project-card reveal live-app-card">
+          <div class="live-app-pills">
+            <span class="live-pill primary">EdTech Assistant &rarr;</span>
+            <span class="live-pill">TS + React</span>
+          </div>
+          <div class="live-app-thumb">
+            <img src="image/ignore/thumbnail/Academic_workspace_with_AI_partner_202606042234.jpeg" loading="lazy" decoding="async" alt="GTU Copilot">
+          </div>
+          <div class="live-app-info">
+            <h3>GTU Copilot</h3>
+            <p class="live-app-desc">High-fidelity academic assistant for GTU students. Features GTU Expert mode, LaTeX rendering, visual aids, custom document generation, reports, and slide outputs.</p>
+            <div class="live-app-tags">
+              <span class="tag">Tailwind</span>
+              <span class="tag">pptxgenjs</span>
+              <span class="tag">Gemini</span>
+            </div>
+            <div class="live-app-cta-row">
+              <a href="https://ai.studio/apps/3efe73b3-509d-4ed9-b6da-94f1cfda3e6d" target="_blank" class="live-try-btn">Try it now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. SSASIT Mapping -->
+        <div class="project-card reveal live-app-card">
+          <div class="live-app-pills">
+            <span class="live-pill primary">Design Thinking &rarr;</span>
+            <span class="live-pill">React</span>
+          </div>
+          <div class="live-app-thumb">
+            <img src="image/ignore/thumbnail/Campus_map_with_directions_202606042234.jpeg" loading="lazy" decoding="async" alt="SSASIT Mapping">
+          </div>
+          <div class="live-app-info">
+            <h3>SSASIT Mapping</h3>
+            <p class="live-app-desc">Design Thinking campus navigation system. Displays interactive digital maps to help parents, students, and visitors navigate the SSASIT campus seamlessly.</p>
+            <div class="live-app-tags">
+              <span class="tag">Vite</span>
+              <span class="tag">Zoom-Pan-Pinch</span>
+              <span class="tag">Motion</span>
+            </div>
+            <div class="live-app-cta-row">
+              <a href="https://remix-ssasit-navigator-391613367603.asia-southeast1.run.app/" target="_blank" class="live-try-btn">Try it now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. AI Assignment Solver Studio -->
+        <div class="project-card reveal live-app-card">
+          <div class="live-app-pills">
+            <span class="live-pill primary">Academic Platform &rarr;</span>
+            <span class="live-pill">React Flow</span>
+          </div>
+          <div class="live-app-thumb">
+            <img src="image/ignore/thumbnail/AI_Assignment_Solver_Studio_202606042234.jpeg" loading="lazy" decoding="async" alt="AI Assignment Solver Studio">
+          </div>
+          <div class="live-app-info">
+            <h3>AI Assignment Solver Studio</h3>
+            <p class="live-app-desc">AI-powered academic workflow platform generating editable diagrams, viva questions, and exam answers. Features split workspace layout, section regeneration, custom handwriting styles, and AI thinking timeline.</p>
+            <div class="live-app-tags">
+              <span class="tag">Zustand</span>
+              <span class="tag">React Flow</span>
+              <span class="tag">Gemini API</span>
+            </div>
+            <div class="live-app-cta-row">
+              <a href="https://ai.studio/apps/6b70a0f0-873a-4bdc-91c6-17a56461627c?fullscreenApplet=true" target="_blank" class="live-try-btn">Try it now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Cosmic.AI -->
+        <div class="project-card reveal live-app-card">
+          <div class="live-app-pills">
+            <span class="live-pill primary">Astrology UI &rarr;</span>
+            <span class="live-pill">React</span>
+          </div>
+          <div class="live-app-thumb">
+            <img src="image/ignore/thumbnail/Celestial_decision_making_app_UI_202606042234.jpeg" loading="lazy" decoding="async" alt="Cosmic.AI">
+          </div>
+          <div class="live-app-info">
+            <h3>Cosmic.AI</h3>
+            <p class="live-app-desc">Minimalist astrology and decision compass app powered by Gemini. Features glassmorphism design with color decision alerts (Green / Yellow / Red).</p>
+            <div class="live-app-tags">
+              <span class="tag">Tailwind</span>
+              <span class="tag">Lucide Icons</span>
+              <span class="tag">Gemini</span>
+            </div>
+            <div class="live-app-cta-row">
+              <a href="https://ai.studio/apps/drive/1ckDpp4RdVDJBo1BYNesVeOMlSP4skhET?fullscreenApplet=true" target="_blank" class="live-try-btn">Try it now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. NanoMorph -->
+        <div class="project-card reveal live-app-card">
+          <div class="live-app-pills">
+            <span class="live-pill primary">AI Studio &rarr;</span>
+            <span class="live-pill">Live</span>
+          </div>
+          <div class="live-app-thumb">
+            <img src="image/ignore/thumbnail/Before_after_AI_transformation_202606042234.jpeg" loading="lazy" decoding="async" alt="NanoMorph">
+          </div>
+          <div class="live-app-info">
+            <h3>NanoMorph</h3>
+            <p class="live-app-desc">AI-powered photo transformation studio for instant edits and enhancements. Deployed inside Google AI Studio.</p>
+            <div class="live-app-tags">
+              <span class="tag">Gemini Flash</span>
+              <span class="tag">Image API</span>
+            </div>
+            <div class="live-app-cta-row">
+              <a href="https://ai.studio/apps/a1bf41d4-2fa7-418d-ae14-697b2219968e" target="_blank" class="live-try-btn">Try it now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Visual Chapter Plan -->
+        <div class="project-card reveal live-app-card">
+          <div class="live-app-pills">
+            <span class="live-pill primary">AI Studio &rarr;</span>
+            <span class="live-pill">Live</span>
+          </div>
+          <div class="live-app-thumb">
+            <img src="image/ignore/thumbnail/Visual_Chapter_Plan_Editorial_Tool_202606042234.jpeg" loading="lazy" decoding="async" alt="Visual Chapter Plan">
+          </div>
+          <div class="live-app-info">
+            <h3>Visual Chapter Plan</h3>
+            <p class="live-app-desc">Editorial tool to transform narrative texts into structured visual plans and scene-by-scene imagery.</p>
+            <div class="live-app-tags">
+              <span class="tag">Gemini Flash</span>
+              <span class="tag">Asset Generation</span>
+            </div>
+            <div class="live-app-cta-row">
+              <a href="https://ai.studio/apps/ccca646d-ea38-457f-b828-44ca66b45202?fullscreenApplet=true" target="_blank" class="live-try-btn">Try it now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Lumina Product Studio -->
+        <div class="project-card reveal live-app-card">
+          <div class="live-app-pills">
+            <span class="live-pill primary">AI Studio &rarr;</span>
+            <span class="live-pill">Live</span>
+          </div>
+          <div class="live-app-thumb">
+            <img src="image/ignore/thumbnail/Product_transformation_journey_UI_202606042234.jpeg" loading="lazy" decoding="async" alt="Lumina Product Studio">
+          </div>
+          <div class="live-app-info">
+            <h3>Lumina Product Studio</h3>
+            <p class="live-app-desc">AI e-commerce asset generator creating backgrounds and mockups directly from product snapshots.</p>
+            <div class="live-app-tags">
+              <span class="tag">Gemini Flash</span>
+              <span class="tag">Product Mockups</span>
+            </div>
+            <div class="live-app-cta-row">
+              <a href="https://ai.studio/apps/942a1079-ebf6-45c6-bf1c-014930ef16ac?fullscreenApplet=true" target="_blank" class="live-try-btn">Try it now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Lumina Creative Canvas -->
+        <div class="project-card reveal live-app-card">
+          <div class="live-app-pills">
+            <span class="live-pill primary">AI Studio &rarr;</span>
+            <span class="live-pill">Live</span>
+          </div>
+          <div class="live-app-thumb">
+            <img src="image/ignore/thumbnail/Node-based_creative_canvas_UI_202606042234.jpeg" loading="lazy" decoding="async" alt="Lumina Creative Canvas">
+          </div>
+          <div class="live-app-info">
+            <h3>Lumina Creative Canvas</h3>
+            <p class="live-app-desc">Node-based creative workspace to chain AI images, edits, prompts, and visual models in an interactive workspace interface.</p>
+            <div class="live-app-tags">
+              <span class="tag">Gemini Flash</span>
+              <span class="tag">Infinite Canvas</span>
+              <span class="tag">AI Node Pipelines</span>
+            </div>
+            <div class="live-app-cta-row">
+              <a href="https://ai.studio/apps/b06feaf6-55b3-4eaf-8589-ed66da4a6457?fullscreenApplet=true" target="_blank" class="live-try-btn">Try it now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ VIDEO PORTFOLIO (PocketMC Style) ============ -->
+  <section class="section" id="video-portfolio">
+    <div class="container">
+      <span class="section-label"><span class="dot" style="background: var(--accent-purple)"></span> Video Production & Creative AI Systems</span>
+      <p style="margin-top: -12px; margin-bottom: 24px; color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">I use AI-assisted filmmaking and visual generation workflows to explore storytelling, marketing, and creative system design.</p>
+      
+      <div class="pocket-container" id="video-metadata-dashboard">
+        <!-- RIGHT CONTENT PANEL -->
+        <div class="pocket-content">
+          <!-- Panel Header -->
+          <div class="pocket-panel-header">
+            <h3 class="pocket-panel-title" id="pocket-title">The Whispering Cloud</h3>
+            <span class="pocket-panel-category" id="pocket-category">Short Film / Mythic Theme</span>
+          </div>
+          
+          <!-- Video Box -->
+          <div class="pocket-video-box">
+            <video id="pocket-video" src="videos/ai-short-story.mp4" controls muted autoplay loop></video>
+          </div>
+          
+          <!-- Technical Metadata -->
+          <div class="pocket-metadata-grid">
+            <div class="pocket-meta-card">
+              <h4>Key Information & Narrative</h4>
+              <p id="pocket-info">A stylized Indian mythic/folklore story focused on a community experiencing a catastrophic drought caused by the "Great Megh Raja" who hoards rain clouds. A lone frog and peacock succeed through song and dance.</p>
+            </div>
+            <div class="pocket-meta-card">
+              <h4>AI & Production Skills Used</h4>
+              <div id="pocket-skills" class="pocket-skills-list">
+                <span class="pocket-skill-tag">Consistent 2D Character Assets</span>
+                <span class="pocket-skill-tag">Generative Character Animation</span>
+                <span class="pocket-skill-tag">Contextual Color Keying & Audio Sync</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Actions -->
+          <div class="pocket-action-row">
+            <button class="pocket-btn" id="pocket-view-full-btn">View Full 📺</button>
+          </div>
+        </div>
+
+        <!-- LEFT SIDEBAR (NOW BOTTOM TABS SWITCHER) -->
+        <div class="pocket-sidebar">
+          <div class="pocket-menu-item active" data-video="1">
+            <span>🎬</span> Whispering Cloud
+          </div>
+          <div class="pocket-menu-item" data-video="2">
+            <span>🎮</span> PocketMC
+          </div>
+          <div class="pocket-menu-item" data-video="3">
+            <span>🪐</span> Antigravity
+          </div>
+          <div class="pocket-menu-item" data-video="4">
+            <span>🐧</span> Evolution of Linux
+          </div>
+          <div class="pocket-menu-item" data-video="5">
+            <span>♟️</span> Chess.com
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OTHER PROJECT SECTIONS (Original n8n & Apps) ============ -->
   <section class="section" id="projects">
     <div class="container">
-      <span class="section-label"><span class="dot" style="background: var(--accent-blue)"></span> n8n Automation
-        Projects</span>
+      <span class="section-label"><span class="dot" style="background: var(--accent-blue)"></span> n8n Automation Projects</span>
+      
       <div class="projects-grid">
 
         <!-- Enterprise B2B Sales Orchestrator -->
         <div class="project-card reveal">
           <div class="project-thumb">
-            <img src="b2b_dashboard_new.webp" loading="lazy" decoding="async" alt="Enterprise B2B Sales Orchestrator">
+            <img src="steeve_ai_video_new.webp" loading="lazy" decoding="async" alt="Enterprise B2B Sales Orchestrator">
           </div>
           <div class="project-info">
             <h3>Enterprise B2B Sales Orchestrator</h3>
@@ -356,15 +617,30 @@
             </div>
             <div class="project-links">
               <a href="https://github.com/roshan30-git/n8n-workflows" target="_blank">GitHub →</a>
+              <button class="workflow-toggle" data-workflow="b2b-sales" style="background:none; border:none; padding:0; font:inherit; cursor:pointer; font-weight:700; text-decoration:underline; color:var(--black);">View Logic 🔍</button>
+            </div>
+
+            <!-- Workflow Diagram Container -->
+            <div id="b2b-sales-workflow" class="workflow-architecture" style="display:none; margin-top:20px; padding:15px; background:#fff; border:2px solid #000; border-radius:8px;">
+<pre class="mermaid-definition">
+graph LR
+    classDef n8nNode fill:#fff,stroke:#ff6d5a,stroke-width:2px,color:#333;
+    classDef startNode fill:#ff6d5a,stroke:#333,stroke-width:2px,color:#fff;
+
+    Start((Lead Source)):::startNode --> Whisper[Whisper AI]:::n8nNode
+    Whisper --> JSON{Lead Data}:::n8nNode
+    JSON --> Mailgun[Mailgun Sequence]:::n8nNode
+    Mailgun --> Track[Response Tracking]:::n8nNode
+    Track --> Supabase[(Supabase DB)]:::n8nNode
+</pre>
             </div>
           </div>
         </div>
 
-
-        <!-- Steeve Automate: Viral AI News Agent -->
+        <!-- Reels Automate: Viral AI News Agent -->
         <div class="project-card reveal">
           <div class="project-thumb">
-            <img src="steeve_ai_video_new.webp" loading="lazy" decoding="async" alt="Steeve Automate: Viral AI News Agent">
+            <img src="b2b_dashboard_new.webp" loading="lazy" decoding="async" alt="Reels Automate: Viral AI News Agent">
           </div>
           <div class="project-info">
             <h3>Steeve Automate: Viral AI News Agent</h3>
@@ -378,11 +654,26 @@
             </div>
             <div class="project-links">
               <a href="https://github.com/roshan30-git/n8n-workflows" target="_blank">GitHub →</a>
+              <button class="workflow-toggle" data-workflow="reels-automate" style="background:none; border:none; padding:0; font:inherit; cursor:pointer; font-weight:700; text-decoration:underline; color:var(--black);">View Logic 🔍</button>
+            </div>
+
+            <!-- Workflow Diagram Container -->
+            <div id="reels-automate-workflow" class="workflow-architecture" style="display:none; margin-top:20px; padding:15px; background:#fff; border:2px solid #000; border-radius:8px;">
+<pre class="mermaid-definition">
+graph LR
+    classDef n8nNode fill:#fff,stroke:#ff6d5a,stroke-width:2px,color:#333;
+    classDef startNode fill:#ff6d5a,stroke:#333,stroke-width:2px,color:#fff;
+
+    RSS[RSS News Feed]:::startNode --> GPT[GPT-4o Scripting]:::n8nNode
+    GPT --> HeyGen[HeyGen AI Avatar]:::n8nNode
+    HeyGen --> Create[Creatomate Composition]:::n8nNode
+    Create --> Postiz[Postiz Scheduler]:::n8nNode
+</pre>
             </div>
           </div>
         </div>
 
-        <!-- Project A -->
+        <!-- Meta Ad Campaign Automation -->
         <div class="project-card reveal">
           <div class="project-thumb">
             <img src="ChatGPT Image Feb 14, 2026, 04_34_57 PM.webp" loading="lazy" decoding="async" alt="Meta Ad Campaign Automation">
@@ -401,15 +692,14 @@
           </div>
         </div>
 
-        <!-- Project B -->
+        <!-- Instagram Auto-Posting System -->
         <div class="project-card reveal">
           <div class="project-thumb">
             <img src="Whisk_8117087f2db9a10bb474a5ee326689c2dr.webp" loading="lazy" decoding="async" alt="Instagram Auto-Posting System">
           </div>
           <div class="project-info">
             <h3>Instagram Auto-Posting System</h3>
-            <p>35-node workflow handling scheduling, caption generation, hashtag suggestion, and image optimizations via
-              editorial calendar.</p>
+            <p>35-node workflow handling scheduling, caption generation, hashtag suggestion, and image optimizations via editorial calendar.</p>
             <div class="project-tags">
               <span class="tag">n8n</span>
               <span class="tag">Instagram API</span>
@@ -421,15 +711,14 @@
           </div>
         </div>
 
-        <!-- Project C -->
+        <!-- Document-Based Chatbot -->
         <div class="project-card reveal">
           <div class="project-thumb">
             <img src="Whisk_a8183ab7d9963abb7af4d6172e164a58dr.webp" loading="lazy" decoding="async" alt="Document-Based Chatbot">
           </div>
           <div class="project-info">
             <h3>Document-Based Chatbot (Q&A)</h3>
-            <p>Ingest document corpus → vectorize → retrieval → LLM summarization chat UI. Reduces lookup and support
-              time significantly.</p>
+            <p>Ingest document corpus → vectorize → retrieval → LLM summarization chat UI. Reduces lookup and support time significantly.</p>
             <div class="project-tags">
               <span class="tag">Embeddings</span>
               <span class="tag">FAISS</span>
@@ -442,7 +731,7 @@
           </div>
         </div>
 
-        <!-- Hire Me: Custom AI & System Architecture -->
+        <!-- Custom AI Orchestration CTA -->
         <div class="project-card hire-cta reveal" style="grid-column: 1 / -1; border: 2px dashed #000; background: #fafafa; margin-top: 20px;">
           <div class="project-info" style="text-align: center; padding: 30px;">
             <h3 style="font-size: 1.5rem; margin-bottom: 8px;">🚀 Custom AI Orchestration & System Design</h3>
@@ -467,8 +756,7 @@
           </div>
           <div class="project-info">
             <h3>Gamma Watermark Remover</h3>
-            <p>Local-first tool to remove the "Made with Gamma" watermark from PDF and PPTX exports. Studio UI with
-              batch processing and privacy focus.</p>
+            <p>Local-first tool to remove the "Made with Gamma" watermark from PDF and PPTX exports. Studio UI with batch processing and privacy focus.</p>
             <div class="project-tags">
               <span class="tag">Python</span>
               <span class="tag">PDF</span>
@@ -482,15 +770,14 @@
           </div>
         </div>
 
-        <!-- GTU-DT-CANVAS -->
+        <!-- GTU Design Thinking Canvas -->
         <div class="project-card reveal">
           <div class="project-thumb">
             <img src="Whisk_adz2ktn1ujy4mtz40cnzmgotmmnkrtl0qzyw0im.webp" loading="lazy" decoding="async" alt="GTU Design Thinking Canvas">
           </div>
           <div class="project-info">
             <h3>GTU Design Thinking Canvas</h3>
-            <p>High-fidelity interactive digital workspace targeted at GTU Design Engineering curriculum with
-              standardized canvases.</p>
+            <p>High-fidelity interactive digital workspace targeted at GTU Design Engineering curriculum with standardized canvases.</p>
             <div class="project-tags">
               <span class="tag">TypeScript</span>
               <span class="tag">Canvas API</span>
@@ -510,8 +797,7 @@
           </div>
           <div class="project-info">
             <h3>SemesterScan</h3>
-            <p>Privacy-first AI organizer for college WhatsApp groups. Automatically categorizes and organizes academic
-              content while respecting user privacy.</p>
+            <p>Privacy-first AI organizer for college WhatsApp groups. Automatically categorizes and organizes academic content while respecting user privacy.</p>
             <div class="project-tags">
               <span class="tag">JavaScript</span>
               <span class="tag">AI</span>
@@ -532,8 +818,7 @@
           </div>
           <div class="project-info">
             <h3>Jyotish.AI</h3>
-            <p>Minimalist Vedic astrology and numerology app powered by Google Gemini for clear, actionable insights.
-            </p>
+            <p>Minimalist Vedic astrology and numerology app powered by Google Gemini for clear, actionable insights.</p>
             <div class="project-tags">
               <span class="tag">TypeScript</span>
               <span class="tag">Gemini AI</span>
@@ -553,7 +838,7 @@
           </div>
           <div class="project-info">
             <h3>Scholar Claw (StudyClaw)</h3>
-            <p>AI-native study infrastructure integrating Gemini AI into syllabuses via WhatsApp/Telegram. Mastering coursework through seamless academic workflows.</p>
+            <p>AI-native study infrastructure integrating Gemini AI into syllabuses via WhatsApp/Telegram. Ingests curriculum into structured chat flows.</p>
             <div class="project-tags">
               <span class="tag">Gemini AI</span>
               <span class="tag">WhatsApp Bot</span>
@@ -565,82 +850,7 @@
           </div>
         </div>
 
-        <!-- GTU Copilot -->
-        <div class="project-card reveal">
-          <div class="project-thumb">
-            <img src="gtu_copilot.webp" loading="lazy" decoding="async" alt="GTU Copilot">
-          </div>
-          <div class="project-info">
-            <h3>GTU Copilot</h3>
-            <p>High-fidelity AI academic assistant for GTU students. Automates routine tasks and generates submission-ready reports and presentations.</p>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Automation</span>
-              <span class="tag">Academic Wingman</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/roshan30-git/GTU-COPILOT" target="_blank">GitHub →</a>
-            </div>
-          </div>
-        </div>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ AI STUDIO PLAYGROUND ============ -->
-  <section class="section" id="ai-studio-playground" style="background: #fff; padding-bottom: 80px;">
-    <div class="container">
-      <span class="section-label"><span class="dot" style="background: #ff3e00"></span> Fun mini and live project u can try within Google AI Studio now*</span>
-      <div class="projects-grid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 25px;">
-
-        <!-- NanoMorph -->
-        <div class="project-card reveal" style="border: 2px solid #000; background: #fff; box-shadow: 4px 4px 0px #000; transition: transform 0.2s, box-shadow 0.2s; padding: 24px;">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
-            <h3 style="margin: 0; font-family: 'Space Mono', monospace; font-size: 1.25rem; line-height: 1.2;">NanoMorph</h3>
-            <span class="live-pulse" style="display: inline-block; width: 10px; height: 10px; background: #ff3e00; border-radius: 50%; box-shadow: 0 0 8px #ff3e00; animation: pulse 1.5s infinite; margin-top: 5px;"></span>
-          </div>
-          <p style="font-size: 0.95rem; line-height: 1.5; color: #444; margin-bottom: 20px;">AI-powered photo transformation studio for instant edits and enhancements using Gemini 2.5 Flash.</p>
-          <div class="project-links">
-            <a href="https://ai.studio/apps/a1bf41d4-2fa7-418d-ae14-697b2219968e" target="_blank" class="btn" style="background: #000; color: #fff; font-size: 0.85rem; padding: 10px 18px; text-decoration: none; font-weight: bold; border: 2px solid #000; display: inline-block;">Try Now in AI Studio ↗</a>
-          </div>
-        </div>
-
-        <!-- Visual Chapter Planner -->
-        <div class="project-card reveal" style="border: 2px solid #000; background: #fff; box-shadow: 4px 4px 0px #000; padding: 24px;">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
-            <h3 style="margin: 0; font-family: 'Space Mono', monospace; font-size: 1.25rem; line-height: 1.2;">Visual Chapter Plan</h3>
-            <span class="live-pulse" style="display: inline-block; width: 10px; height: 10px; background: #ff3e00; border-radius: 50%; box-shadow: 0 0 8px #ff3e00; animation: pulse 1.5s infinite; margin-top: 5px;"></span>
-          </div>
-          <p style="font-size: 0.95rem; line-height: 1.5; color: #444; margin-bottom: 20px;">Editorial tool to transform narrative text into structured visual plans and high-fidelity scene imagery.</p>
-          <div class="project-links">
-            <a href="https://ai.studio/apps/ccca646d-ea38-457f-b828-44ca66b45202?fullscreenApplet=true" target="_blank" class="btn" style="background: #000; color: #fff; font-size: 0.85rem; padding: 10px 18px; text-decoration: none; font-weight: bold; border: 2px solid #000; display: inline-block;">Try Now in AI Studio ↗</a>
-          </div>
-        </div>
-
-        <!-- Lumina Product Studio -->
-        <div class="project-card reveal" style="border: 2px solid #000; background: #fff; box-shadow: 4px 4px 0px #000; padding: 24px;">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
-            <h3 style="margin: 0; font-family: 'Space Mono', monospace; font-size: 1.25rem; line-height: 1.2;">Lumina Product Studio</h3>
-            <span class="live-pulse" style="display: inline-block; width: 10px; height: 10px; background: #ff3e00; border-radius: 50%; box-shadow: 0 0 8px #ff3e00; animation: pulse 1.5s infinite; margin-top: 5px;"></span>
-          </div>
-          <p style="font-size: 0.95rem; line-height: 1.5; color: #444; margin-bottom: 20px;">AI e-commerce asset generator for creating professional mockups and SEO listings from product photos.</p>
-          <div class="project-links">
-            <a href="https://ai.studio/apps/942a1079-ebf6-45c6-bf1c-014930ef16ac?fullscreenApplet=true" target="_blank" class="btn" style="background: #000; color: #fff; font-size: 0.85rem; padding: 10px 18px; text-decoration: none; font-weight: bold; border: 2px solid #000; display: inline-block;">Try Now in AI Studio ↗</a>
-          </div>
-        </div>
-
-        <!-- Lumina Creative Canvas -->
-        <div class="project-card reveal" style="border: 2px solid #000; background: #fff; box-shadow: 4px 4px 0px #000; padding: 24px;">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
-            <h3 style="margin: 0; font-family: 'Space Mono', monospace; font-size: 1.25rem; line-height: 1.2;">Lumina Creative Canvas</h3>
-            <span class="live-pulse" style="display: inline-block; width: 10px; height: 10px; background: #ff3e00; border-radius: 50%; box-shadow: 0 0 8px #ff3e00; animation: pulse 1.5s infinite; margin-top: 5px;"></span>
-          </div>
-          <p style="font-size: 0.95rem; line-height: 1.5; color: #444; margin-bottom: 20px;">Node-based infinite creative workspace to chain AI images, edits, and videos in a tactile interface.</p>
-          <div class="project-links">
-            <a href="https://ai.studio/apps/b06feaf6-55b3-4eaf-8589-ed66da4a6457?fullscreenApplet=true" target="_blank" class="btn" style="background: #000; color: #fff; font-size: 0.85rem; padding: 10px 18px; text-decoration: none; font-weight: bold; border: 2px solid #000; display: inline-block;">Try Now in AI Studio ↗</a>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -756,15 +966,36 @@
   <!-- ============ CONTACT ============ -->
   <section class="section" id="contact">
     <div class="container">
-      <div class="contact-card reveal">
-        <h2>Let's Build Something<br />Together ✨</h2>
-        <p>
-          I'm open to collaborate on exciting projects, contribute to startups, and help build impactful
-          solutions.<br />
-          <strong>I love working on:</strong> System architecture, AI integrations, automation workflows, and end-to-end
-          product development.
+      <div class="contact-card reveal" style="text-align: left; padding: 48px;">
+        <h2 style="text-align: center; margin-bottom: 24px; font-size: clamp(2rem, 5vw, 3rem); font-weight: 900;">LET'S CONNECT</h2>
+        <p style="font-size: 1rem; line-height: 1.7; margin-bottom: 16px; color: var(--text);">
+          Most of the things on this website started as random ideas, frustrations, side experiments, or questions I couldn't stop thinking about.
         </p>
-        <div class="contact-links">
+        <p style="font-size: 1rem; line-height: 1.7; margin-bottom: 20px; color: var(--text);">
+          If you're building something interesting in AI, education, productivity, automation, design, or emerging technology, I'd be happy to connect.
+        </p>
+        
+        <p style="font-size: 1.05rem; font-weight: 700; margin-bottom: 12px; color: var(--text);">I'm currently open to:</p>
+        <ul style="list-style-type: none; padding-left: 0; margin-bottom: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px;">
+          <li style="display: flex; align-items: center; gap: 8px; font-size: 0.95rem; font-weight: 600;"><span style="color: var(--accent-pink);">•</span> Internship opportunities</li>
+          <li style="display: flex; align-items: center; gap: 8px; font-size: 0.95rem; font-weight: 600;"><span style="color: var(--accent-orange);">•</span> Startup collaborations</li>
+          <li style="display: flex; align-items: center; gap: 8px; font-size: 0.95rem; font-weight: 600;"><span style="color: var(--accent-blue);">•</span> Open-source projects</li>
+          <li style="display: flex; align-items: center; gap: 8px; font-size: 0.95rem; font-weight: 600;"><span style="color: var(--accent-green);">•</span> Student and research initiatives</li>
+          <li style="display: flex; align-items: center; gap: 8px; font-size: 0.95rem; font-weight: 600;"><span style="color: var(--accent-purple);">•</span> Product discussions</li>
+          <li style="display: flex; align-items: center; gap: 8px; font-size: 0.95rem; font-weight: 600;"><span style="color: var(--accent-yellow);">•</span> Interesting ideas worth exploring</li>
+        </ul>
+        
+        <p style="font-size: 1rem; line-height: 1.7; margin-bottom: 16px; color: var(--text);">
+          Whether it's a project, opportunity, feedback, or simply a conversation about technology, feel free to reach out.
+        </p>
+        <p style="font-size: 0.95rem; font-style: italic; margin-bottom: 20px; color: var(--text-muted);">
+          Currently based in Surat, Gujarat.
+        </p>
+        <p style="font-size: 1.15rem; font-weight: 800; margin-bottom: 32px; color: var(--text); border-top: 1.5px dashed var(--black); padding-top: 16px;">
+          Let's build something useful.
+        </p>
+        
+        <div class="contact-links" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
           <a href="mailto:roshankanojiya13@gmail.com" class="contact-link">
             ✉️ Email Me
           </a>
