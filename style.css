@@ -1955,6 +1955,7 @@ img {
   flex-direction: row !important;
   justify-content: flex-start !important;
   overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
   gap: 12px !important;
   background: #1e1e2d !important;
   flex-shrink: 0 !important;
